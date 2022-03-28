@@ -2,13 +2,15 @@ import { Personajes } from './components/Personajes';
 
 import { Provider } from 'react-redux';
 import generateStore from './redux/store';
+import NavBar from './components/NavBar';
 
 function App() {
   
   const store = generateStore()
 
   return (
-    <Provider className="App" store={store}>
+    <Provider store={store}>
+      <NavBar/>
        <Personajes />
     </Provider>
   );
