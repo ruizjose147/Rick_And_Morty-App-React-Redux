@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { useDispatch, useSelector } from 'react-redux'
-import { obtenerPersonajesAction } from '../redux/rymDukcs';
+import { obtenerPersonajesAction, nextPageAction } from '../redux/rymDukcs';
 
 export const Personajes = () => {
     
@@ -14,6 +14,7 @@ export const Personajes = () => {
     <div>
         Lista de Personajes
         <button onClick={() => dispatch(obtenerPersonajesAction())}>Get Personajes</button>
+        <button onClick={() => dispatch(nextPageAction(1))}>Siguiente</button>
         <ul>
             {
                 personajesRyM.map(item => (
