@@ -1,10 +1,16 @@
-import './App.css';
+import { Personajes } from './components/Personajes';
+
+import { Provider } from 'react-redux';
+import generateStore from './redux/store';
 
 function App() {
+  
+  const store = generateStore()
+
   return (
-    <div className="App">
-       
-    </div>
+    <Provider className="App" store={store}>
+       <Personajes />
+    </Provider>
   );
 }
 
