@@ -1,5 +1,8 @@
-#video Demo de la app
+<h3>video Demo de la app<h3/>
 <h3>https://youtu.be/y2fXfVbja1Q<h3/>
+
+  <h3>App desplegada en github pages<h3/>
+<h3>https://ruizjose147.github.io/Rick_And_Morty-App-React-Redux/<h3/>
 
 
 
